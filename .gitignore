@@ -12,6 +12,11 @@ pids
 *.pid.lock
 
 
+.idea/consultbusiness.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
 
 # Bower dependency directory (https://bower.io/)
 bower_components
