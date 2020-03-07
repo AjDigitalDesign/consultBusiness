@@ -1,5 +1,6 @@
 import React from 'react';
 import App from "next/app";
+import Router from 'next/router'
 import Link from "next/link";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "../styles/global";
@@ -22,7 +23,7 @@ function MyApp ({ Component, pageProps, global}){
                 href="https://fonts.googleapis.com/css?family=Hind:400,500,700|Merriweather:400,400i,700&display=swap" rel="stylesheet"
             />
             <Navigation {...global}/>
-            <Component {...pageProps} {...global}/>
+            <Component {...pageProps} {...global} />
             <GlobalStyles/>
             <Footer/>
         </ThemeProvider>

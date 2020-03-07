@@ -1,7 +1,6 @@
-import React from 'react'
-import {bool, func} from 'prop-types'
+import React from 'react';
+import {bool, func} from 'prop-types';
 import styled from 'styled-components';
-
 import {StyledBurger} from "./Burger.styled";
 
 const NavBarDefaultWrapper = styled.nav`
@@ -23,6 +22,34 @@ const NavBarDefaultWrapper = styled.nav`
 
 
 const Burger = ({open, setOpen}) =>{
+
+    let menuList = [
+        {
+            label: 'Home',
+            slug: '/',
+        },
+        {
+            label: 'About',
+            slug: '/about',
+        },
+        {
+            label: 'Services',
+            slug: '/services',
+        },
+        {
+            label: 'Gallery',
+            slug: '/gallery',
+        },
+        {
+            label: 'News',
+            slug: '/news',
+        },
+        {
+            label: 'Contact',
+            slug: '/contact',
+        },
+    ]
+
     return (
         <NavBarDefaultWrapper className="navbar-default">
             <div className="container">

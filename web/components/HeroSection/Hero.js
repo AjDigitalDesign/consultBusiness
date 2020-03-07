@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import {FaArrowRight} from "react-icons/fa";
@@ -49,9 +50,7 @@ const StyledHero = styled.div`
     >p{
       color: ${({ theme }) => theme.primaryWhite};
     }
-    >.our-service-btn{
-        position:relative;
-     a{
+     >a{
           background-image: -moz-linear-gradient( 170deg, rgb(49,67,238) 0%, rgb(54,152,200) 48%, rgb(58,236,161) 100%);
           background-image: -webkit-linear-gradient( 170deg, rgb(49,67,238) 0%, rgb(54,152,200) 48%, rgb(58,236,161) 100%);
           background-image: -ms-linear-gradient( 170deg, rgb(49,67,238) 0%, rgb(54,152,200) 48%, rgb(58,236,161) 100%);
@@ -61,11 +60,11 @@ const StyledHero = styled.div`
           border: 0 !important;
           font-weight: 600;
       }
-    }
+    
   } 
 `;
 
-const Hero = () => {
+const Hero = (props) => {
     return(
         <StyledHero className="hero-section">
             <div className="container">
@@ -74,11 +73,9 @@ const Hero = () => {
                       Business Consult
                     </h1>
                     <p>The demands for financial institutions have changed a bit, ofuscation is no longer accepted which is why this Consulting Business WordPress Theme is so perfect.</p>
-                    <div className="our-service-btn">
-                        <a className="btn hero-btn-area" href="/contact">
-                            Our Services <span>{FaArrowRight}</span>
+                        <a href="/" className="btn hero-btn-area">
+                            Our Services
                         </a>
-                    </div>
                 </div>
             </div>
         </StyledHero>
