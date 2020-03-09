@@ -51,7 +51,6 @@ export const StyledNavLink = styled.nav`
     justify-content: space-between;
     align-items: flex-start;
   }
-
   .navbar-brand {
     margin-top: -140px;
     padding-bottom: 20px;

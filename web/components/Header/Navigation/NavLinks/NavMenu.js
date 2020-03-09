@@ -13,7 +13,6 @@ const MainNavbar = styled.nav`
   .navbar {
     padding: 0.5rem 0 !important;
   }
-
   .navbar-header-custom {
     padding: 15px 0 10px 0;
     display: flex;
