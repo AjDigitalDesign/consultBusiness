@@ -15,7 +15,8 @@ const StyledHero = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: left;
-  height: 40vh;
+  min-height: 40vh;
+  overflow: hidden;
   @media (min-width: ${({ theme }) => theme.desktop}) {
     height: 60vh;
   }

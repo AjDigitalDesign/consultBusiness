@@ -18,7 +18,6 @@ const StyledCta = styled.section`
       text-align: left;
     }
   }
-
   .cta-btn {
     text-align: center;
     color: #fff;

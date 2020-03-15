@@ -17,7 +17,6 @@ export const StyledNavLink = styled.nav`
   -webkit-box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.19);
   box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.19);
-
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 50%;
   }
@@ -25,7 +24,6 @@ export const StyledNavLink = styled.nav`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 50%;
   }
-
   a {
     font-size: 1rem;
     text-transform: uppercase;
@@ -55,12 +53,10 @@ export const StyledNavLink = styled.nav`
     margin-top: -140px;
     padding-bottom: 20px;
   }
-
   .navbar-brand a {
     outline: none;
     text-decoration: none;
   }
-
   .navbar-brand a img {
     width: 110px;
   }
